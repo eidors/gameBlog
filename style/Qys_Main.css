@@ -1193,6 +1193,12 @@ body {
     background-position: center;
 }
 
-.nav-li div {
-    font-size: 12px;
+.nav-li>div {
+    font-size: 12px !important;
+    height: 150px;
+}
+
+.nav-li p {
+    line-height: 10px !important;
+    padding: 10px;
 }
