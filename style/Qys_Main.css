@@ -1192,3 +1192,7 @@ body {
     height: 24px;
     background-position: center;
 }
+
+.nav-li div {
+    font-size: 12px;
+}
