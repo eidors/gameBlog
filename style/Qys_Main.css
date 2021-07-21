@@ -1180,5 +1180,15 @@ body {
 
 .img-open {
     width: 175px;
-    height: 90px;
+    height: 110px;
+}
+
+.drop_box .arrow {
+    position: absolute;
+    left: 0;
+    top: 24px;
+    background: url(../img/arrow_1.png) no-repeat;
+    width: 12px;
+    height: 24px;
+    background-position: center;
 }
