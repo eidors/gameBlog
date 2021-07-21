@@ -57,6 +57,7 @@ $(function(e) {
         }
     });
     console.log("If you have any qusation, pls find me.(Email:zft774156938@163.com)");
+    $("[data-toggle='popover']").popover();
 });
 // var resizeTimer = null;
 // var IsAnimate = true;
