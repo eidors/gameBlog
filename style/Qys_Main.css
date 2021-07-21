@@ -267,6 +267,7 @@ body {
     animation: openMainMenu 1s;
     /* Safari 与 Chrome */
     -webkit-animation: openMainMenu 1s;
+    opacity: 0.8;
 }
 
 .right-lite {
