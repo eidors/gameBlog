@@ -1203,3 +1203,11 @@ body {
     line-height: 10px !important;
     padding: 10px;
 }
+
+.hidden {
+    display: none !important;
+}
+
+.hide {
+    display: none !important;
+}
