@@ -6,7 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
-    <link href="https://apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css" rel="stylesheet">
     <link href="style/Qys_Main.css" rel="stylesheet" />
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
@@ -25,19 +24,170 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <button class="navbar-toggler pull-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar1">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar2">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="page-header" style="background:white; padding: 30px;">
-        <div class="nav clearfix text-center" id="sdoNav" style="display: block;">
-            <span class="nav-li text-black padding-left20 padding-right20"><span>首页</span></span>
-            <span class="nav-li text-black padding-left20 padding-right20"><span>首页</span></span>
-            <span class="nav-li text-black padding-left20 padding-right20"><span>首页</span></span>
-            <span class="nav-li text-black padding-left20 padding-right20"><span>首页</span></span>
-            <span class="nav-li text-black padding-left20 padding-right20"><span>首页</span></span>
-            <span class="nav-li text-black padding-left20 padding-right20"><span>首页</span></span>
-            <span class="nav-li text-black padding-left20 padding-right20"><span>首页</span></span>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar1">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Dropdown link
+                  </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+            </ul>
         </div>
-    </div>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar2">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        端游
+                    </a>
+                    <div class="dropdown-menu">
+                        <ul class="nav ">
+                            <li class="nav-li">
+                                <a class="pic margin-left2 margin-right2" data-container=".popover1" data-toggle="popover" data-placement="right" data-content='<img src="img/wx2.jpg" class="rounded col-md-12" />' data-trigger="hover" data-html="true"><img src="img/g2.jpg" alt="" class="img-open" data-toggle="modal" data-target="#myModal">
+                                    <span class="go"></span>
+                                </a>
+                                <div class="bg-white" target="_blank" data-container=".popover1" data-toggle="popover" data-placement="right" data-content='<img src="img/wx2.jpg" class="rounded col-md-12" />' data-trigger="hover" data-html="true">英雄联盟</div>
+                                <div class="bg-white" target="_blank">
+                                    <p>300英雄</p>
+                                    <p>DOTA2</p>
+                                    <p>神之浩劫</p>
+                                </div>
+                            </li>
+                            <li class="nav-li">
+                                <a class="pic margin-left2 margin-right2"><img src="img/g3.jpg" alt="" class="img-open"><span class="go"></span></a>
+                                <div class="bg-white" target="_blank">吃鸡</div>
+                                <div class="bg-white" target="_blank">
+                                    <p>无限法则</p>
+                                    <p>APEX英雄</p>
+                                    <p> </p>
+                                </div>
+                            </li>
+                            <li class="nav-li">
+                                <a class="pic margin-left2 margin-right2"><img src="img/g4.jpg" alt="" class="img-open"><span class="go"></span></a>
+                                <div class="bg-white">饥荒</div>
+                                <div class="bg-white" target="_blank">
+                                    <p>我的世界</p>
+                                    <p>泰拉瑞亚</p>
+                                </div>
+                            </li>
+                            <li class="nav-li">
+                                <a class="pic margin-left2 margin-right2"><img src="img/g5.jpg" alt="" class="img-open"><span class="go"></span></a>
+                                <div class="bg-white">warframe</div>
+                                <div class="bg-white" target="_blank">
+                                    <p>龙之谷</p>
+                                </div>
+                            </li>
+                            <li class="nav-li">
+                                <a class="pic margin-left2 margin-right2"><img src="img/g6.jpg" alt="" class="img-open"><span class="go"></span></a>
+                                <div class="bg-white">星际争霸</div>
+                                <div class="bg-white" target="_blank">
+                                    <p>魔兽争霸</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        手游
+                    </a>
+                    <div class="dropdown-menu">
+                        <ul class="nav">
+                            <li class="nav-li">
+                                <a class="pic margin-left2 margin-right2" data-container=".popover2" data-toggle="popover" data-placement="right" data-content='<img src="img/wx2.jpg" class="rounded col-md-12" />' data-trigger="hover" data-html="true"><img src="img/g7.jpg" alt="" class="img-open" data-toggle="modal" data-target="#myModal">
+                                    <span class="go"></span>
+                                </a>
+                                <div class="bg-white" target="_blank" data-container=".popover2" data-toggle="popover" data-placement="right" data-content='<img src="img/wx2.jpg" class="rounded col-md-12" />' data-trigger="hover" data-html="true">英雄联盟手游</div>
+                                <div class="bg-white" target="_blank">
+                                    <p>王者荣耀</p>
+                                    <p>决战平安京</p>
+                                    <p>英雄之刃</p>
+                                </div>
+                            </li>
+                            <li class="nav-li">
+                                <a class="pic margin-left2 margin-right2"><img src="img/g8.jpg" alt="" class="img-open"><span class="go"></span></a>
+                                <div class="bg-white" target="_blank">和平精英</div>
+                                <div class="bg-white" target="_blank">
+                                    <p>使命召唤</p>
+                                </div>
+                            </li>
+                            <li class="nav-li">
+                                <a class="pic margin-left2 margin-right2"><img src="img/g9.jpg" alt="" class="img-open"><span class="go"></span></a>
+                                <div class="bg-white">元气骑士</div>
+                                <div class="bg-white"> </div>
+                            </li>
+                            <li class="nav-li">
+                                <a class="pic margin-left2 margin-right2"><img src="img/g10.jpg" alt="" class="img-open"><span class="go"></span></a>
+                                <div class="bg-white">三国杀</div>
+                                <div class="bg-white"> </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        休闲
+                    </a>
+                    <div class="dropdown-menu">
+                        <ul class="nav">
+                            <li class="nav-li">
+                                <a class="pic margin-left2 margin-right2"><img src="img/g11.jpg" alt="" class="img-open" data-toggle="modal" data-target="#myModal">
+                                    <span class="go"></span>
+                                </a>
+                                <div class="bg-white"> </div>
+                                <div class="bg-white" target="_blank">
+                                    <p> </p>
+                                    <p> </p>
+                                    <p> </p>
+                                </div>
+                            </li>
+                            <li class="nav-li">
+                                <a class="pic margin-left2 margin-right2"><img src="img/g12.jpeg" alt="" class="img-open"><span class="go"></span></a>
+                                <div class="bg-white" target="_blank"> </div>
+                                <div class="bg-white" target="_blank">
+                                    <p> </p>
+                                    <p> </p>
+                                    <p> </p>
+                                </div>
+                            </li>
+                            <li class="nav-li">
+                                <a class="pic margin-left2 margin-right2"><img src="img/g13.jpg" alt="" class="img-open"><span class="go"></span></a>
+                                <div class="bg-white"> </div>
+                                <div class="bg-white"> </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div style="background-image: url(img/1.jpg); 
 background-repeat: no-repeat;
 background-position: center 0;
@@ -197,18 +347,6 @@ background-size: cover;">
     </div>
     <!-- 模态框（Modal） -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img src="img/wx2.jpg" class="rounded col-md-12" />
-                </div>
-            </div>
-            <!-- /.modal-content -->
-        </div>
-        <!-- /.modal -->
-    </div>
-    <!-- 模态框（Modal） -->
-    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-body">
